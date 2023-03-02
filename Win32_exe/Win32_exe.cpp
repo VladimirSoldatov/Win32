@@ -58,6 +58,7 @@ LRESULT CALLBACK MainWinProc(HWND hw, UINT msg, WPARAM wp, LPARAM lp) {
 	HWND nBtn1;
 	HWND nBtn2;
 	HWND hStatic;
+	HWND hEdit;
 	switch (msg) {
 	case WM_CREATE:
 
@@ -73,6 +74,10 @@ LRESULT CALLBACK MainWinProc(HWND hw, UINT msg, WPARAM wp, LPARAM lp) {
 
 		hStatic = CreateWindow(L"static", L"Мой текст", WS_CHILD | WS_VISIBLE,
 			300, 300, 150, 20, hw, NULL, NULL, NULL);
+
+		hEdit = CreateWindow(L"edit", L"Мой редактируемый текст", WS_CHILD | WS_VISIBLE,
+			500, 300, 200, 20, hw, NULL, NULL, NULL);
+
 
 		return 0;
 	case WM_COMMAND:
