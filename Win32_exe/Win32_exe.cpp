@@ -96,6 +96,8 @@ LRESULT CALLBACK MainWinProc(HWND hw, UINT msg, WPARAM wp, LPARAM lp) {
 }
 
 /*
+https://learn.microsoft.com/ru-ru/windows/win32/api/winuser/nf-winuser-createwindowa
+
 COLOR_ACTIVEBORDER
 COLOR_ACTIVECAPTION
 COLOR_APPWORKSPACE
